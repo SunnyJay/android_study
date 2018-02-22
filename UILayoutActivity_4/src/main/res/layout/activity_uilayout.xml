@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!--orientation默认生成vertical 垂直-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--layout_gravity指定对齐方式-->
+    <!--layout_weight使用比例控制大小-->
+    <Button
+        android:text="button1"
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        />
+
+    <!--设置layout_weight后，宽度不在layout_width决定，layout_width为0是规范写法-->
+    <EditText
+        android:id="@+id/send1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="top"
+        android:text="Send"
+        />
+
+    
+    <!--button2垂直居中-->
+    <Button
+        android:text="button2"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+    <!--<Button
+        android:text="button3"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content" />-->
+
+
+    <Button
+        android:text="button4"
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        />
+
+    <EditText
+        android:id="@+id/input_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:hint="请输入" />
+</LinearLayout>
+

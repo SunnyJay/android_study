@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--name随便填-->
+    <!--path表示共享的具体路径-->
+    <external-path
+        name="my_images"
+        path="Android/data/com.example.administrator.cameraalbumtest_14/cache/output_image.jpg"
+        />
+</paths>

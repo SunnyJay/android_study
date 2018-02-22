@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--官方推荐由父类来决定当前控件的大小-->
+    <!--gravity指文字对齐方式 支持|  -->
+    <!--textColor 颜色必须8位  -->
+    <!--textSize 单位sp  -->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is TextView"
+        android:textColor="#eeff00ff"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+    <!--textAllCaps关闭Button默认的将文字变成大写的机制-->
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textAllCaps="false"
+        />
+
+    <!--hint指定提示性文本-->
+    <!--maxLines指定最大行数，超过则滚动-->
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入一些文字吧"
+        android:maxLines="2"
+        />
+
+
+    <ImageView
+        android:id="@+id/image_view_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img1"
+        />
+    
+    <ProgressBar
+        android:id="@+id/progress_bar_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:max="100"-->
+    <ProgressBar
+        android:id="@+id/progress_bar_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        />
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button2"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button3"
+        android:textAllCaps="false"
+        />
+
+
+</LinearLayout>
